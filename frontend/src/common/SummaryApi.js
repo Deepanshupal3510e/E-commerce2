@@ -1,7 +1,7 @@
 
 import ChangePassword from "../pages/ChangePassword";
 
-export const baseUrl = "http://localhost:8000";
+export const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const summaryApi = {
   register: {
