@@ -30,11 +30,11 @@ const PORT = process.env.PORT || 8000;
 
 
 
-// app.use("/" , (req , res) => {
-//     res.json({
-//         message : "server is running "
-//     })
-// })
+app.use("/" , (req , res) => {
+    res.json({
+        message : "server is running "
+    })
+})
 
 app.use("/api/user" , userRouter)
 app.use("/api/catogary" , catagoryRoute)
