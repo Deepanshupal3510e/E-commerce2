@@ -1,7 +1,7 @@
 
 import ChangePassword from "../pages/ChangePassword";
 
-export const baseUrl = import.meta.env.VITE_BASE_URL;
+export const baseUrl = "https://onlineshopbackend.vercel.app";
 
 const summaryApi = {
   register: {
