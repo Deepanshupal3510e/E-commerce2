@@ -12,15 +12,14 @@ import imageUpload from './routes/uploadImage.route.js';
 import subCategoryRouter from './routes/subCategory.route.js';
 import ProductRouter from './routes/product.route.js';
 const app = express();
-console.log(process.env.FRONTEND_URL)
 app.use(cors({
     credentials : true,
-    origin : process.env.FRONTEND_URL,
+    origin : "https://onlineshopbydeepanshu.netlify.app"
 
 }))
 
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Origin", "https://onlineshopbydeepanshu.netlify.app");
     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
     res.header("Access-Control-Allow-Credentials", "true");
