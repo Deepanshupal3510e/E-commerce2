@@ -14,16 +14,16 @@ const productSlice = createSlice({
     initialState : initialValue,
     reducers : {
         setCatogary : (state , action) => {
-            state.catogary = [...action.payload]
+            state.catogary = [...action?.payload]
         },
         setSubCategory : (state , action) => {
-            state.subCatogary = [...action.payload]
+            state.subCatogary = [...action?.payload]
         },
         setProducts : (state , action) => {
-            state.product = [...action.payload]
+            state.product = [...action?.payload]
         },
         setSearchProduct : (state, action) => {
-            state.searchProduct = [...action.payload]
+            state.searchProduct = [...action?.payload]
         },
         removerSearchProduct : (state , action) => {
             state.searchProduct = []
