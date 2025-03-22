@@ -29,7 +29,7 @@ const VerifyEmail = () => {
                     setRedirectHome(true);
 
                 };
-                if(res.data.error){\
+                if(res.data.error){
                     toast.error("Email not verified please try again");
                 }
         } catch (error) {
