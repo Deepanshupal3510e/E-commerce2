@@ -52,11 +52,11 @@ app.use("/api/file" , imageUpload)
 app.use("/api/sub-category" , subCategoryRouter)
 app.use("/api/product" , ProductRouter)
 
-app.use("/" , (req , res) => {
-    res.json({
-        message : "server is running "
-    })
-})
+// app.use("/" , (req , res) => {
+//     res.json({
+//         message : "server is running "
+//     })
+// })
 connectDatabase()
 .then(() => {
     app.listen(PORT , () => {
