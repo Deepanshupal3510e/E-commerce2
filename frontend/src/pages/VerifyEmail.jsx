@@ -17,7 +17,6 @@ const VerifyEmail = () => {
 
     const verifyEmail = async () => {
         try {
-                console.log("user email verify function called with data",userId);
                 const res = await Axios({
                     ...summaryApi.verifyEmails,
                     data : {
@@ -25,15 +24,12 @@ const VerifyEmail = () => {
                     }
                 });
                 if(res.data.success){
-                    console.log(res.data);
-                    console.log("Email verified successfully");
                     toast.success("Email verified successfully");
                     getUserDetails()
                     setRedirectHome(true);
 
                 };
-                if(res.data.error){
-                    console.log(res.data.error);
+                if(res.data.error){\
                     toast.error("Email not verified please try again");
                 }
         } catch (error) {

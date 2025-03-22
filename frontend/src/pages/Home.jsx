@@ -38,7 +38,6 @@ const Home = () => {
         ...summaryApi.getUserDetails
       })
       dispatch(setUserDetails(res.data.data))
-        console.log(res.data.data.verify_email , " this is verify email")
         setVerifyEmail(res.data.data.verify_email)
     }
 
